@@ -14,8 +14,12 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="min-h-screen text-gray-700">
-    <header class="flex items-center justify-between px-6 py-4">
+  <body
+    class="min-h-screen text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-400"
+  >
+    <header
+      class="flex items-center justify-between px-6 py-4 border-b dark:bg-gray-800 dark:text-gray-400"
+    >
       <div class="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +60,7 @@
           <input
             type="text"
             id="email-address-icon"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="pl-10 form-input"
             placeholder="name@flowbite.com"
           />
         </div>
@@ -90,18 +94,9 @@
           />
         </svg>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-            clip-rule="evenodd"
-          />
-        </svg>
+        <button class="theme-toggle-btn">
+          <i class="fa-solid fa-sun"></i>
+        </button>
 
         <button
           id="dropdownDefaultButton"
@@ -125,39 +120,25 @@
             aria-labelledby="dropdownDefaultButton"
           >
             <li>
-              <a
-                href="#"
-                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Dashboard</a
-              >
+              <a href="#" class="sidebar-link">Dashboard</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Settings</a
-              >
+              <a href="#" class="sidebar-link">Settings</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Earnings</a
-              >
+              <a href="#" class="sidebar-link">Earnings</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Sign out</a
-              >
+              <a href="#" class="sidebar-link">Sign out</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
     <div class="h-[90vh] flex">
-      <aside class="w-[260px] border-r h-full p-2">
+      <aside
+        class="w-[260px] border-r h-full p-2 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+      >
         <ul>
           <li>
             <a href="/index.html" class="nav-link">
@@ -191,17 +172,17 @@
           </li>
         </ul>
       </aside>
-      <main class="w-full px-4 py-4">
-        <h2>Products</h2>
+      <main class="w-full px-4 py-4 dark:bg-gray-800 dark:text-gray-400">
+        <h2 class="text-xl font-semibold">Products</h2>
 
         <button
           data-modal-target="addProductModal"
           data-modal-toggle="addProductModal"
           type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-4 gap-2"
+          class="mt-4 btn-primary"
         >
           <i class="fa-solid fa-add"></i>
-          <p>Add Product</p>
+          Add Product
         </button>
 
         <!-- Main modal -->
@@ -313,9 +294,7 @@
           <table
             class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
           >
-            <thead
-              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-            >
+            <thead class="table-head">
               <tr>
                 <th class="px-6 py-3">Title</th>
                 <th class="px-6 py-3">Price</th>

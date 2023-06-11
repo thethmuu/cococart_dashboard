@@ -1,5 +1,6 @@
 const tableBody = document.querySelector('.table-body');
 
+// global
 let products = [];
 
 // run function when the document is ready
