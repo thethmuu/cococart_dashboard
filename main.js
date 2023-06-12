@@ -1,7 +1,7 @@
 import './src/index.css';
 import './node_modules/flowbite/dist/flowbite.min.js';
 
-const body = document.querySelector('body');
+const body = document.querySelector('html');
 const themeToggleBtn = document.querySelector('.theme-toggle-btn');
 
 let theme = 'light';
