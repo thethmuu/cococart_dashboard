@@ -19,6 +19,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "chart.js": "^4.3.0",
     "flowbite": "^1.6.5"
   }
 }
